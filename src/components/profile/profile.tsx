@@ -16,24 +16,27 @@ export const Profile = () => {
                     <div>
                         <h2>Profile</h2>
 
-                        <p>
-                            Recent IT graduate with a concentration in Frontend React JS, having successfully completed comprehensive coursework and extra courses in web development. Adept at leveraging a strong academic foundation in IT and programming languages to create innovative and user-friendly applications. Eager to contribute to dynamic projects, showcasing dedication, technical proficiency, and a passion for staying abreast of industry trends. Key attributes include:
-                        </p>
+                        <div className="flex items-center justify-between">
 
-                        <ul className="list-disc pl-5">
-                            <li>
-                                Technical Proficiency: Well-versed in JavaScript, HTML, and CSS, with a focus on the React JS framework. Completed practical exercises and projects, demonstrating the ability to translate theoretical knowledge into tangible results.
-                            </li>
-                            <li>
-                                Problem-Solving Skills: Developed strong analytical and problem-solving skills through various coding challenges and real-world application of programming concepts. Excels at troubleshooting and finding creative solutions.
-                            </li>
-                            <li>
-                                Adaptability and Eagerness to Learn: Proven ability to quickly grasp new technologies and programming languages. Demonstrated commitment to continuous learning, staying informed about the latest developments in the IT field.
-                            </li>
-                            <li>
-                                Communication Skills: Possesses excellent verbal and written communication skills, cultivated through collaborative coursework and group projects. Able to effectively convey technical concepts to both technical and non-technical audiences.
-                            </li>
-                        </ul>
+                            <p className="w-[45%] text-2xl">
+                                Recent IT graduate with a concentration in Frontend React JS, having successfully completed comprehensive coursework and extra courses in web development. Adept at leveraging a strong academic foundation in IT and programming languages to create innovative and user-friendly applications. Eager to contribute to dynamic projects, showcasing dedication, technical proficiency, and a passion for staying abreast of industry trends. Key attributes include:
+                            </p>
+
+                            <ul className="text-sm list-disc pl-5 w-[45%]">
+                                <li>
+                                    Technical Proficiency: Well-versed in JavaScript, HTML, and CSS, with a focus on the React JS framework. Completed practical exercises and projects, demonstrating the ability to translate theoretical knowledge into tangible results.
+                                </li>
+                                <li>
+                                    Problem-Solving Skills: Developed strong analytical and problem-solving skills through various coding challenges and real-world application of programming concepts. Excels at troubleshooting and finding creative solutions.
+                                </li>
+                                <li>
+                                    Adaptability and Eagerness to Learn: Proven ability to quickly grasp new technologies and programming languages. Demonstrated commitment to continuous learning, staying informed about the latest developments in the IT field.
+                                </li>
+                                <li>
+                                    Communication Skills: Possesses excellent verbal and written communication skills, cultivated through collaborative coursework and group projects. Able to effectively convey technical concepts to both technical and non-technical audiences.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
