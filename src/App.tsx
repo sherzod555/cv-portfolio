@@ -1,4 +1,5 @@
 import './App.css'
+import Education from './components/education/education'
 import Header from "./components/header/header"
 import Profile from "./components/profile/profile"
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Profile/>
+      <Education/>
     </>
   )
 }
