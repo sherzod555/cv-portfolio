@@ -13,7 +13,7 @@ export const Profile = () => {
                     </div>
 
 
-                    <div className="py-5">
+                    <div className="py-8">
                         <h2 className="text-3xl font-bold ">Profile</h2>
 
                         <div className="flex items-center justify-between py-5">
