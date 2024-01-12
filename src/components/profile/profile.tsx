@@ -1,15 +1,25 @@
-import Avatar from "../../assets/portrait.png"
+import Avatar from "../../assets/portrait2.png"
 
 export const Profile = () => {
     return (
         <>
             <main className="container mx-auto w-[1300px]">
                 <div>
-                    <div className="flex flex-col items-center font-mono">
-                        <img className="w-52 h-auto rounded-full border-4 border-blue-400" src={Avatar} alt="Sherzod" />
+                    {/* <div className="flex flex-col items-center font-mono">
+                        <img className="bg-blue-100 w-52 h-auto rounded-[50%] border-4 border-blue-400" src={Avatar} alt="Sherzod" />
                         <h1 className="text-4xl font-bold pt-3">Sherzod Yodgorov</h1>
                         <p className="text-slate-500">24 years old</p>
                         <h3 className="text-2xl font-semibold">Front-end React JS Web developer</h3>
+                    </div> */}
+
+                    <div className="py-5 flex gap-x-16 justify-center items-center font-mono">
+                        <img className="bg-blue-100 w-52 h-auto rounded-[50%] border-4 border-blue-400" src={Avatar} alt="Sherzod" />
+                        <div className="flex flex-col items-start gap-y-5">
+
+                            <h1 className="text-6xl font-bold pt-3">Sherzod Yodgorov</h1>
+                            <h3 className="text-3xl font-semibold">Front-end React JS Web developer</h3>
+                            <p className="text-slate-500">24 years old</p>
+                        </div>
                     </div>
 
 
