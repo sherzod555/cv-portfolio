@@ -29,17 +29,17 @@ export const Footer = () => {
             Description: "Telegram",
         },
         {
-            Link: "",
+            Link: "https://www.linkedin.com/in/sherzod-yodgorov-183085252",
             Icon: LinkedIn,
             Description: "LinkedIn",
         },
         {
-            Link: "",
+            Link: "https://github.com/sherzod555",
             Icon: GitHub,
             Description: "GitHub",
         },
         {
-            Link: "",
+            Link: "https://www.facebook.com/sherzod.yodgorov.507?mibextid=ZbWKwL",
             Icon: Facebook,
             Description: "Facebook",
         },
@@ -54,7 +54,7 @@ export const Footer = () => {
             Description: "YouTube",
         },
         {
-            Link: "",
+            Link: "https://hh.uz/resume/699ee205ff0c7e9ddb0039ed1f6b6368525659",
             Icon: HeadHunter,
             Description: "HeadHunter.uz",
         },
