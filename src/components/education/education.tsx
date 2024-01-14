@@ -1,6 +1,48 @@
 import EduListDots from "../../assets/eduhat.svg"
 
 export const Education = () => {
+
+    const mockDataEdu = [
+        {
+          UniverName: "The state secondary school specialised in foreign languages under the Ministry of Public education",
+          date: "2010-2015",
+        },
+        {
+          UniverName: "Academic Lyceum under Islamic University",
+          FacultyName: "Exact Sciences",
+          date: "2015-2018",
+        },
+        {
+          UniverName: "Course in Pre-Foundation Studies at WIUT",
+          FacultyName: "Basics of English for Academic Purposes",
+          date: "2016-2018",
+        },
+        {
+          UniverName: "Course in Pre-Foundation Studies at WIUT",
+          FacultyName: "Basics of Quantitative Skills",
+          date: "2017-2018",
+        },
+        {
+          UniverName: "Westminster International University in Tashkent",
+          FacultyName: "Certificate in International Foundation Studies (CIFS)",
+          date: "2018-2019",
+        },
+        {
+          UniverName: "Westminster International University in Tashkent",
+          FacultyName: "Business Information Systems",
+          date: "2019-2024",
+        },
+        {
+          UniverName: "Najot Ta'lim",
+          FacultyName: "Frontend ReactJS (Standard)",
+          date: "2022-2023",
+        },
+        {
+          UniverName: "Bobir Akilkhanov tech academy",
+          FacultyName: "CGI - Motion Design",
+          date: "2024-Present",
+        },
+      ];
     return (
         <>
             <main className="bg-blue-100">
@@ -14,113 +56,18 @@ export const Education = () => {
 
                         <div className="flex flex-col">
 
-                            {/* should be mapped from here */}
-                            <div className="flex items-start justify-between text-xl py-10 border-gray-400 border-b-2">
-
-                                <div className="flex items-start gap-x-4">
-                                    <img className="h-7" src={EduListDots} alt="list-dots" />
-                                    <div className="max-w-[1000px]">
-                                        <p className="">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque magni voluptatem consequuntur laborum voluptate necessitatibus placeat consequatur dignissimos repellat qui!
-                                        </p>
-                                        <p className="text-base text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati laborum fugit veniam quos saepe.
-                                        </p>
+                            {mockDataEdu.map((data, index) => (
+                                <div key={index} className="flex items-start justify-between text-xl py-7 border-gray-400 border-b-2">
+                                    <div className="flex items-start gap-x-4">
+                                        <img className="h-7" src={EduListDots} alt="list-dots" />
+                                        <div className="max-w-[1000px]">
+                                            <p>{data.UniverName}</p>
+                                            <p className="text-base text-gray-500 pt-1">{data.FacultyName}</p>
+                                        </div>
                                     </div>
+                                    <p>{data.date}</p>
                                 </div>
-                                <p>
-                                    2010-2015
-                                </p>
-                            </div>
-
-                            <div className="flex items-start justify-between text-xl py-10 border-gray-400 border-b-2">
-
-                                <div className="flex items-start gap-x-4">
-                                    <img className="h-7" src={EduListDots} alt="list-dots" />
-                                    <div className="max-w-[1000px]">
-                                        <p className="">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, atque.                                        </p>
-                                        <p className="text-base text-gray-500">
-                                            Lorem ipsum dolor sit amet.
-                                        </p>
-                                    </div>
-                                </div>
-                                <p>
-                                    2010-2015
-                                </p>
-                            </div>
-
-                            <div className="flex items-start justify-between text-xl py-10 border-gray-400 border-b-2">
-
-                                <div className="flex items-start gap-x-4">
-                                    <img className="h-7" src={EduListDots} alt="list-dots" />
-                                    <div className="max-w-[1000px]">
-                                        <p className="">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque magni voluptatem consequuntur laborum voluptate necessitatibus placeat consequatur dignissimos repellat qui!
-                                        </p>
-                                        <p className="text-base text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati laborum fugit veniam quos saepe.
-                                        </p>
-                                    </div>
-                                </div>
-                                <p>
-                                    2010-2015
-                                </p>
-                            </div>
-
-                            <div className="flex items-start justify-between text-xl py-10 border-gray-400 border-b-2">
-
-                                <div className="flex items-start gap-x-4">
-                                    <img className="h-7" src={EduListDots} alt="list-dots" />
-                                    <div className="max-w-[1000px]">
-                                        <p className="">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis odit blanditiis ipsum saepe voluptatibus at eius quis iste quas numquam! Voluptatum dolorem perspiciatis magnam deserunt ea exercitationem, suscipit nemo et!
-                                        </p>
-                                        <p className="text-base text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati laborum fugit veniam quos saepe.
-                                        </p>
-                                    </div>
-                                </div>
-                                <p>
-                                    2010-present
-                                </p>
-                            </div>
-
-                            <div className="flex items-start justify-between text-xl py-10 border-gray-400 border-b-2">
-
-                                <div className="flex items-start gap-x-4">
-                                    <img className="h-7" src={EduListDots} alt="list-dots" />
-                                    <div className="max-w-[1000px]">
-                                        <p className="">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque magni voluptatem consequuntur laborum voluptate necessitatibus placeat consequatur dignissimos repellat qui!
-                                        </p>
-                                        <p className="text-base text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto obcaecati laborum fugit veniam quos saepe.
-                                        </p>
-                                    </div>
-                                </div>
-                                <p>
-                                    2010-2015
-                                </p>
-                            </div>
-
-                            <div className="flex items-start justify-between text-xl py-10 border-gray-400 border-b-2">
-
-                                <div className="flex items-start gap-x-4">
-                                    <img className="h-7" src={EduListDots} alt="list-dots" />
-                                    <div className="max-w-[1000px]">
-                                        <p className="">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus saepe tempore quo sapiente ratione.
-                                        </p>
-                                        <p className="text-base text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quibusdam, culpa quasi eaque excepturi nemo pariatur reiciendis, molestias aliquid voluptatibus mollitia illo minima expedita temporibus?                                        </p>
-                                    </div>
-                                </div>
-                                <p>
-                                    2010-2015
-                                </p>
-                            </div>
-                            {/* should be mapped till here */}
+                            ))}
                         </div>
 
                     </div>
