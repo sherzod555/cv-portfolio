@@ -1,8 +1,12 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import Banner from "../../assets/banner.jpg"
 import Download from "../../assets/download.svg"
 import Sun from "../../assets/sun.svg"
 import Moon from "../../assets/moon.svg"
 import Uzb from "../../assets/uzb.svg"
+
+
 
 
 
@@ -17,25 +21,25 @@ export const Header = () => {
                     {/* navigation bar */}
                     <div className="flex items-center justify-between py-5 text-lg font-semibold">
 
-                        {/* navigation bar */}
+                        {/* navigation list */}
                         <ul className="flex items-center gap-x-10 uppercase">
                             <li className="hover:text-blue-400 hover:scale-125 duration-300">
-                                <a href="#">Profile</a>
+                                <Link to="profile" smooth={true} duration={1000}>Profile</Link>
                             </li>
                             <li className="hover:text-blue-400 hover:scale-125 duration-300">
-                                <a href="#">Education</a>
+                                <Link to="education" smooth={true} duration={1000}>Education</Link>
                             </li>
                             <li className="hover:text-blue-400 hover:scale-125 duration-300">
-                                <a href="#">Achievements</a>
+                                <Link to="achievements" smooth={true} duration={1000}>Achievements</Link>
                             </li>
                             <li className="hover:text-blue-400 hover:scale-125 duration-300">
-                                <a href="#">Portfolio</a>
+                                <Link to="portfolio" smooth={true} duration={1000}>Portfolio</Link>
                             </li>
                             <li className="hover:text-blue-400 hover:scale-125 duration-300">
-                                <a href="#">Skills</a>
+                                <Link to="skills" smooth={true} duration={1000}>Skills</Link>
                             </li>
                             <li className="hover:text-blue-400 hover:scale-125 duration-300">
-                                <a href="#">Contacts</a>
+                                <Link to="contacts" smooth={true} duration={1000}>Contacts</Link>
                             </li>
                         </ul>
 

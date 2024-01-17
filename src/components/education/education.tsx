@@ -45,7 +45,7 @@ export const Education = () => {
       ];
     return (
         <>
-            <main className="bg-blue-100">
+            <main className="bg-blue-100" id="education">
 
                 <div className="container mx-auto w-[1300px]">
 

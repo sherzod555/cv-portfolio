@@ -1,5 +1,5 @@
 import './App.css'
-import Achievements from './components/achivements/achievements'
+import Achievements from './components/achievements/achievements'
 import Contacts from './components/contacts/contacts'
 import Education from './components/education/education'
 import Footer from './components/footer/footer'

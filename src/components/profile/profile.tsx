@@ -3,7 +3,7 @@ import Avatar from "../../assets/portrait2.png"
 export const Profile = () => {
     return (
         <>
-            <main className="container mx-auto w-[1300px]">
+            <main className="container mx-auto w-[1300px]" id="profile" >
                 <div>
                     {/* <div className="flex flex-col items-center font-mono">
                         <img className="bg-blue-100 w-52 h-auto rounded-[50%] border-4 border-blue-400" src={Avatar} alt="Sherzod" />
