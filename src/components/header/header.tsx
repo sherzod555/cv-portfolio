@@ -49,7 +49,8 @@ export const Header = () => {
                         <div className="flex items-center gap-x-8">
                             <div className="flex items-center gap-x-2 rounded-2xl border hover:scale-90 duration-300 px-3 py-2">
                                 <img className="h-7 w-auto" src={Download} alt="resume" />
-                                <a href="../../../public/Resume.docx">Resume</a>
+
+                                <a href="../../Resume.docx" download="Resume-Sherzod-Yodgorov.docx">Resume</a>
                             </div>
 
                             <div className="flex items-center rounded-2xl border  p-2">
