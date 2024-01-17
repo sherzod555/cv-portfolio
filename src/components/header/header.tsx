@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import Banner from "../../assets/banner.jpg"
 import Download from "../../assets/download.svg"
