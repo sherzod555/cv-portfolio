@@ -1,3 +1,6 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
+
 import Phone from "../../assets/phone2.svg"
 import Gmail from "../../assets/gmail.svg"
 import Telegram from "../../assets/telegram.svg"
@@ -70,17 +73,19 @@ export const Footer = () => {
 
                     <div className="py-10 text-white/50 flex items-baseline justify-around">
                         <div className="uppercase grid gap-y-5">
-                            <p className="font-bold hover:text-white duration-500 cursor-pointer">home</p>
+                            <Link to='header' smooth={true} duration={1000}><p className="font-bold hover:text-white duration-500 cursor-pointer">home</p></Link>
+                            
                             <ul className="grid gap-y-5">
-                                <li className="hover:text-white duration-500 cursor-pointer">about</li>
-                                <li className="hover:text-white duration-500 cursor-pointer">Education</li>
-                                <li className="hover:text-white duration-500 cursor-pointer">Achievements</li>
-                                <li className="hover:text-white duration-500 cursor-pointer">Skills</li>
+                                <li className="hover:text-white duration-500 cursor-pointer"><Link to="profile" smooth={true} duration={1000}>About</Link></li>
+                                <li className="hover:text-white duration-500 cursor-pointer"><Link to="education" smooth={true} duration={1000}>Education</Link></li>
+                                <li className="hover:text-white duration-500 cursor-pointer"><Link to="achievements" smooth={true} duration={1000}>Achievements</Link></li>
+                                <li className="hover:text-white duration-500 cursor-pointer"><Link to="skills" smooth={true} duration={1000}>Skills</Link></li>
                             </ul>
                         </div>
 
                         <div className="grid gap-y-5">
-                            <p className="font-bold hover:text-white duration-500 cursor-pointer">PORTFOLIO</p>
+                            <Link to="portfolio" smooth={true} duration={1000}><p className="font-bold hover:text-white duration-500 cursor-pointer">PORTFOLIO</p></Link>
+
                             <ul className="grid gap-y-5">
                                 <li className="hover:text-white duration-500 cursor-pointer">Project 1</li>
                                 <li className="hover:text-white duration-500 cursor-pointer">Project 2</li>
@@ -93,7 +98,7 @@ export const Footer = () => {
                             <ul className="grid grid-cols-3 gap-x-10 gap-y-7">
 
                                 {mockDataContact.map((data, index) => (
-                                    <li key={index} className="cursor-pointer p-2 hover:bg-white duration-500 bg-white/50 rounded-[50%]"><a href={data.Link}><img className="h-7 w-auto" src={data.Icon} alt={data.Description} /></a></li>
+                                    <li key={index} className="cursor-pointer p-2 hover:bg-white duration-500 bg-white/50 rounded-[50%]"><a target="_blank" href={data.Link}><img className="h-7 w-auto" src={data.Icon} alt={data.Description} /></a></li>
                                 ))}
                             </ul>
                         </div>

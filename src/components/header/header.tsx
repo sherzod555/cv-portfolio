@@ -13,7 +13,7 @@ import Uzb from "../../assets/uzb.svg"
 export const Header = () => {
     return (
         <>
-            <header>
+            <header id="header">
                 <img className="w-full" src={Banner} alt="banner" />
                 <main className="container mx-auto w-[1300px]">
 
