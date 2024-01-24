@@ -5,12 +5,14 @@ import Download from "../../assets/download.svg"
 import Sun from "../../assets/sun.svg"
 import Moon from "../../assets/moon.svg"
 import Uzb from "../../assets/uzb.svg"
-
+import { useTheme } from '../../ThemeContext.tsx';
 
 
 
 
 export const Header = () => {
+
+    const { isDarkMode, toggleTheme } = useTheme();    
     return (
         <>
             <header id="header">
@@ -53,9 +55,8 @@ export const Header = () => {
                                 <a href="../../Resume.docx" download="Resume-Sherzod-Yodgorov.docx">Resume</a>
                             </div>
 
-                            <div className="flex items-center rounded-2xl border  p-2">
-                                <img className="h-7 w-auto" src={Sun} alt="light mode" />
-                                <img className="h-7 w-auto" src={Moon} alt="dark mode" />
+                            <div onClick={toggleTheme} className="flex items-center rounded-2xl border p-2 cursor-pointer">
+                                <img className="h-7 w-auto" src={isDarkMode ? Sun : Moon} alt={isDarkMode ? "Light Mode" : "Dark Mode"} />
                             </div>
 
 

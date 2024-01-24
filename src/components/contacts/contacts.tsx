@@ -1,4 +1,8 @@
+import { useTheme } from '../../ThemeContext.tsx';
+
 export const Contacts = () => {
+    const { isDarkMode } = useTheme();    
+
     return (
         <>
             <main className="bg-blue-100" id="contacts">

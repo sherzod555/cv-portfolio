@@ -1,4 +1,7 @@
+import { useTheme } from '../../ThemeContext.tsx';
 export const Portfolio = () => {
+    const { isDarkMode } = useTheme();    
+
     return (
         <>
             <main className="bg-blue-100" id="portfolio">

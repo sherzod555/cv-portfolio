@@ -1,6 +1,9 @@
+import { useTheme } from '../../ThemeContext.tsx';
 export const Skills = () => {
+    const { isDarkMode } = useTheme();    
+
     return (
-        <>
+        <div className={`${isDarkMode ? "bg-slate-950 text-white" : ""}`}>
             <main className="container mx-auto w-[1300px]" id="skills">
 
 
@@ -10,7 +13,7 @@ export const Skills = () => {
                 </div>
 
             </main>
-        </>
+        </div>
     );
 };
 
