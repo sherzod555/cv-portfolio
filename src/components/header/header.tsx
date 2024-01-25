@@ -25,22 +25,22 @@ export const Header = () => {
 
                         {/* navigation list */}
                         <ul className="flex items-center gap-x-10 uppercase">
-                            <li className="hover:text-blue-400 hover:scale-125 duration-300">
+                            <li className="hover:text-blue-400 hover:scale-125 cursor-pointer duration-300">
                                 <Link to="profile" smooth={true} duration={1000}>Profile</Link>
                             </li>
-                            <li className="hover:text-blue-400 hover:scale-125 duration-300">
+                            <li className="hover:text-blue-400 hover:scale-125 cursor-pointer duration-300">
                                 <Link to="education" smooth={true} duration={1000}>Education</Link>
                             </li>
-                            <li className="hover:text-blue-400 hover:scale-125 duration-300">
+                            <li className="hover:text-blue-400 hover:scale-125 cursor-pointer duration-300">
                                 <Link to="achievements" smooth={true} duration={1000}>Achievements</Link>
                             </li>
-                            <li className="hover:text-blue-400 hover:scale-125 duration-300">
+                            <li className="hover:text-blue-400 hover:scale-125 cursor-pointer duration-300">
                                 <Link to="portfolio" smooth={true} duration={1000}>Portfolio</Link>
                             </li>
-                            <li className="hover:text-blue-400 hover:scale-125 duration-300">
+                            <li className="hover:text-blue-400 hover:scale-125 cursor-pointer duration-300">
                                 <Link to="skills" smooth={true} duration={1000}>Skills</Link>
                             </li>
-                            <li className="hover:text-blue-400 hover:scale-125 duration-300">
+                            <li className="hover:text-blue-400 hover:scale-125 cursor-pointer duration-300">
                                 <Link to="contacts" smooth={true} duration={1000}>Contacts</Link>
                             </li>
                         </ul>
