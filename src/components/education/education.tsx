@@ -8,7 +8,7 @@ export const Education = () => {
 
     return (
         <>
-            <main className={`${isDarkMode ? "bg-slate-800 text-white" : "bg-blue-100"}`} id="education">
+            <main className={`${isDarkMode ? "bg-slate-700 text-white" : "bg-blue-100"}`} id="education">
 
                 <div className="container mx-auto w-[1300px]">
 

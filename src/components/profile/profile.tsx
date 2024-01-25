@@ -7,7 +7,7 @@ export const Profile = () => {
     const { isDarkMode } = useTheme();
 
     return (
-        <div className={`${isDarkMode ? "bg-slate-950 text-white" : ""}`}>
+        <div className={`${isDarkMode ? "bg-slate-900 text-white" : ""}`}>
             <main className="container mx-auto w-[1300px]" id="profile" >
                 <div>
 

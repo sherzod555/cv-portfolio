@@ -15,7 +15,7 @@ export const Header = () => {
     const { isDarkMode, toggleTheme } = useTheme();    
     return (
         <>
-            <header id="header">
+            <header className={`${isDarkMode ? "bg-slate-900 text-white" : ""}`} id="header">
                 <img className="w-full" src={Banner} alt="banner" />
                 <main className="container mx-auto w-[1300px]">
 

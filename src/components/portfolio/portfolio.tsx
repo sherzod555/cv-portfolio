@@ -4,7 +4,7 @@ export const Portfolio = () => {
 
     return (
         <>
-            <main className="bg-blue-100" id="portfolio">
+            <main className={`${isDarkMode ? "bg-slate-700 text-white" : "bg-blue-100"}`} id="portfolio">
 
                 <div className="container mx-auto w-[1300px]">
 

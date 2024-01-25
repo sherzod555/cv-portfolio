@@ -5,7 +5,7 @@ export const Contacts = () => {
 
     return (
         <>
-            <main className="bg-blue-100" id="contacts">
+            <main className={`${isDarkMode ? "bg-slate-700 text-white" : "bg-blue-100"}`} id="contacts">
 
                 <div className="container mx-auto w-[1300px]">
 
