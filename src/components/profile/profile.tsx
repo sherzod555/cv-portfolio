@@ -12,7 +12,7 @@ export const Profile = () => {
                 <div>
 
                     <div className="py-5 flex gap-x-16 justify-center items-center font-mono">
-                        <img className={`${isDarkMode ? "bg-slate-800 border-slate-400" : "bg-blue-100 border-blue-400"}  w-52 h-auto rounded-[50%] border-4 "`} src={Avatar} alt="Sherzod" />
+                        <img className={`${isDarkMode ? "bg-slate-700 border-slate-400" : "bg-blue-100 border-blue-400"}  w-52 h-auto rounded-[50%] border-4 "`} src={Avatar} alt="Sherzod" />
                         <div className="flex flex-col items-start gap-y-5">
 
                             <h1 className="text-6xl font-bold pt-3">Sherzod Yodgorov</h1>

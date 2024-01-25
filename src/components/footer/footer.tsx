@@ -10,7 +10,7 @@ export const Footer = () => {
     return (
         <>
 
-            <main className="bg-blue-500">
+            <main className={` ${isDarkMode? "bg-slate-800":"bg-blue-500"}`}>
 
                 <div className="container mx-auto w-[1300px]">
 
