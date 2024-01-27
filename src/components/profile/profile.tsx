@@ -17,7 +17,9 @@ export const Profile = () => {
 
                             <h1 className="text-6xl font-bold pt-3">Sherzod Yodgorov</h1>
                             <h3 className="text-3xl font-semibold">Front-end React JS Web developer</h3>
-                            <p className="text-slate-500">24 years old</p>
+                            <div className="text-slate-500 flex items-center gap-x-5">
+                                <p>December 6, 1999</p>/<a target="_blank" href="mailto:sher55555yodgorov@gmail.com">sher55555yodgorov@gmail.com</a>
+                            </div>
                         </div>
                     </div>
 
@@ -33,7 +35,7 @@ export const Profile = () => {
 
                             <ul className="text-xs font-semibold w-[45%] flex flex-col gap-5">
                                 {mockDataProfile.map((data, index) => (
-                                    <li key={index} className={`${isDarkMode? "bg-slate-400 text-black":"bg-blue-400"}  flex items-start gap-x-2 p-2 rounded-lg`}>
+                                    <li key={index} className={`${isDarkMode ? "bg-slate-400 text-black" : "bg-blue-400"}  flex items-start gap-x-2 p-2 rounded-lg`}>
                                         <p>&#10148;</p>
                                         <p>{data.Ability}</p>
                                     </li>
