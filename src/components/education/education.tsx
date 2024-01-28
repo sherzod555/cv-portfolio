@@ -10,7 +10,7 @@ export const Education = () => {
         <>
             <main className={`${isDarkMode ? "bg-slate-700 text-white" : "bg-blue-100"}`} id="education">
 
-                <div className="container mx-auto w-[1300px]">
+                <div className="container mx-auto px-7 xl:w-[1200px]">
 
                     <div className="py-8">
                         <h2 className="text-3xl font-bold">Education</h2>
@@ -20,15 +20,15 @@ export const Education = () => {
                         <div className="flex flex-col">
 
                             {mockDataEdu.map((data, index) => (
-                                <div key={index} className="flex items-start justify-between text-xl py-7 border-gray-400 border-b-2">
-                                    <div className="flex items-start gap-x-4">
-                                        <img className={`${isDarkMode ? 'invert' : ""} h-7`} src={EduListDots} alt="list-dots" />
-                                        <div className="max-w-[1000px]">
+                                <div key={index} className="flex items-start justify-between text-base md:text-xl py-7 border-gray-400 border-b-2">
+                                    <div className="flex items-start gap-x-4 w-[90%]">
+                                        <img className={`${isDarkMode ? 'invert' : ""} h-5 md:h-7`} src={EduListDots} alt="list-dots" />
+                                        <div>
                                             <p>{data.UniverName}</p>
                                             <p className="text-base text-gray-500 pt-1">{data.FacultyName}</p>
                                         </div>
                                     </div>
-                                    <p>{data.date}</p>
+                                    <p className="ml-5 w-1/5 text-end">{data.date}</p>
                                 </div>
                             ))}
                         </div>

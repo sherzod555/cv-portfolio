@@ -45,7 +45,7 @@ export const mockDataContact = [
         Description: "Instagram",
     },
     {
-        Link: "https://youtube.com/@sherzodyodgorov",
+        Link: "https://youtube.com/@sherzodyodgorov?sub_confirmation=1",
         Icon: Youtube,
         Description: "YouTube",
     },

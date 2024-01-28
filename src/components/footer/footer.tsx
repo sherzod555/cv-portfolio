@@ -12,7 +12,7 @@ export const Footer = () => {
 
             <main className={` ${isDarkMode? "bg-slate-950":"bg-blue-500"}`}>
 
-                <div className="container mx-auto w-[1300px]">
+                <div className="container mx-auto xl:w-[1200px] px-7 md:text-base text-xs">
 
                     <div className="py-10 text-white/50 flex items-baseline justify-around">
                         <div className="uppercase grid gap-y-5">
@@ -38,10 +38,10 @@ export const Footer = () => {
 
                         <div className="grid gap-y-5">
                             <Link to='contacts' smooth={true} duration={1000}><p className="font-bold hover:text-white duration-500 cursor-pointer">CONTACTS</p></Link>
-                            <ul className="grid grid-cols-3 gap-x-10 gap-y-7">
+                            <ul className="grid grid-cols-3 gap-x-6 gap-y-4 md:gap-x-10 md:gap-y-7">
 
                                 {mockDataContact.map((data, index) => (
-                                    <li key={index} className="cursor-pointer p-2 hover:scale-110 hover:bg-white duration-500 bg-white/50 rounded-[50%]"><a target="_blank" href={data.Link}><img className="h-7 w-auto" src={data.Icon} alt={data.Description} /></a></li>
+                                    <li key={index} className="cursor-pointer p-2 hover:scale-110 hover:bg-white duration-500 bg-white/50 rounded-[50%]"><a target="_blank" href={data.Link}><img className="h-5 md:h-7 w-auto" src={data.Icon} alt={data.Description} /></a></li>
                                 ))}
                             </ul>
                         </div>
