@@ -27,12 +27,12 @@ export const Header = () => {
 
 
                     {/* navigation bar */}
-                    <div className="flex items-center justify-between py-5 text-sm lg:text-lg font-semibold">
+                    <div className="flex items-center justify-between py-5 text-sm xl:text-lg font-semibold">
 
 
                         <div>
                             {/* navigation list */}
-                            <ul className="hidden md:flex items-center md:gap-x-6 lg:gap-x-10 uppercase">
+                            <ul className="hidden lg:flex items-center gap-x-6 xl:gap-x-10 uppercase">
                                 <li className="hover:text-blue-400 hover:scale-125 cursor-pointer duration-300">
                                     <Link to="profile" smooth={true} duration={1000}>Profile</Link>
                                 </li>
@@ -54,7 +54,9 @@ export const Header = () => {
                             </ul>
 
                             {/* Hamburger menu */}
-                            <img className={`${isDarkMode? "invert":""} h-5 block md:hidden`} src={Hamburger} alt="hamburger menu" />
+                            <div className="border rounded-2xl p-2 lg:hidden">
+                                <img className={`${isDarkMode ? "invert" : ""} h-5 block lg:hidden`} src={Hamburger} alt="hamburger menu" />
+                            </div>
                         </div>
 
 
@@ -62,20 +64,20 @@ export const Header = () => {
                         {/* Page settings */}
                         <div className="flex items-center gap-x-8">
                             <div className="flex items-center gap-x-2 rounded-2xl border hover:scale-90 duration-300 px-3 py-2">
-                                <img className={`${isDarkMode ? "invert" : ""} h-5 md:h-7 w-auto`} src={Download} alt="resume" />
+                                <img className={`${isDarkMode ? "invert" : ""} h-5 lg:h-7 w-auto`} src={Download} alt="resume" />
 
                                 <a href="../../Resume.docx" download="Resume-Sherzod-Yodgorov.docx">Resume</a>
                             </div>
 
                             <div onClick={toggleTheme} className="flex items-center rounded-2xl border p-2 cursor-pointer">
-                                <img className={`${isDarkMode ? "invert" : ""} h-5 md:h-7 w-auto`} src={isDarkMode ? Sun : Moon} alt={isDarkMode ? "Light Mode" : "Dark Mode"} />
+                                <img className={`${isDarkMode ? "invert" : ""} h-5 lg:h-7 w-auto`} src={isDarkMode ? Sun : Moon} alt={isDarkMode ? "Light Mode" : "Dark Mode"} />
                             </div>
 
 
                             <div>
-                                <img className="h-5 md:h-7 w-auto cursor-pointer" src={Uzb} alt="uzb" />
-                                {/* <img className="h-5 md:h-7 w-auto cursor-pointer" src={Rus} alt="rus"/>
-                                <img className="h-5 md:h-7 w-auto cursor-pointer" src={Eng} alt="eng"/> */}
+                                <img className="h-5 lg:h-7 w-auto cursor-pointer" src={Uzb} alt="uzb" />
+                                {/* <img className="h-5 lg:h-7 w-auto cursor-pointer" src={Rus} alt="rus"/>
+                                <img className="h-5 lg:h-7 w-auto cursor-pointer" src={Eng} alt="eng"/> */}
                             </div>
 
 
