@@ -8,6 +8,7 @@ import Uzb from "../../assets/uzb.svg"
 // import Rus from "../../assets/rus.svg"
 // import Eng from "../../assets/eng.svg"
 import Hamburger from "../../assets/hamburger.svg"
+import Cross from "../../assets/cross.svg"
 import { useTheme } from '../../ThemeContext.tsx';
 import { useState } from "react";
 
@@ -35,7 +36,7 @@ export const Header = () => {
 
 
                     {/* navigation bar */}
-                    <div className="flex items-center justify-between py-5 text-sm xl:text-lg font-semibold">
+                    <div className="flex items-start justify-between py-5 text-sm xl:text-lg font-semibold">
 
 
                         <div>
@@ -63,8 +64,8 @@ export const Header = () => {
 
                             {/* Hamburger menu */}
                             <div className="border rounded-2xl p-2 lg:hidden">
-                                <img onClick={toggleMobileMenu} className={`${isDarkMode ? "invert" : ""} h-5 block lg:hidden`} src={Hamburger} alt="hamburger menu" />
-                                <ul className={`uppercase flex flex-col gap-y-4 pt-4 ${isMobileMenuOpen ? '' : 'hidden'}`}>
+                                <img onClick={toggleMobileMenu} className={`${isDarkMode ? "invert" : ""} h-5 block lg:hidden`} src={`${isMobileMenuOpen ? Cross : Hamburger}`} alt="hamburger menu" />
+                                <ul className={`uppercase flex flex-col gap-y-4 pt-4 p-5 ${isMobileMenuOpen ? '' : 'hidden'}`}>
                                     <li className="hover:text-blue-400 cursor-pointer duration-300"><Link to="profile" smooth={true} duration={1000}>Profile</Link></li>
                                     <li className="hover:text-blue-400 cursor-pointer duration-300"><Link to="education" smooth={true} duration={1000}>Education</Link></li>
                                     <li className="hover:text-blue-400 cursor-pointer duration-300"><Link to="achievements" smooth={true} duration={1000}>Achievements</Link></li>
