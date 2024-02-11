@@ -36,7 +36,7 @@ export const Header = () => {
 
 
                     {/* navigation bar */}
-                    <div className="flex items-start justify-between py-5 text-sm xl:text-lg font-semibold">
+                    <div className="flex items-start gap-x-2 justify-between py-5 text-sm xl:text-lg font-semibold">
 
 
                         <div>
