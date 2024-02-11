@@ -79,7 +79,7 @@ export const Header = () => {
 
 
                         {/* Page settings */}
-                        <div className="flex items-center gap-x-8">
+                        <div className="flex items-center md:gap-x-6 sm:gap-x-4 gap-x-2 lg:gap-x-8">
                             <div className="flex items-center gap-x-2 rounded-2xl border hover:scale-90 duration-300 px-3 py-2">
                                 <img className={`${isDarkMode ? "invert" : ""} h-5 lg:h-7 w-auto`} src={Download} alt="resume" />
 
