@@ -1,10 +1,14 @@
 import EduListDots from "../../assets/eduhat.svg"
 import mockDataEdu from "./mockEdu.tsx";
 import { useTheme } from '../../ThemeContext.tsx';
+import { useLanguage } from '../../LanguageContext.tsx';
+
 
 
 export const Education = () => {
     const { isDarkMode } = useTheme();    
+    const { language } = useLanguage();
+
 
     return (
         <>
@@ -13,7 +17,7 @@ export const Education = () => {
                 <div className="container mx-auto px-7 xl:w-[1200px]">
 
                     <div className="py-8">
-                        <h2 className="text-3xl font-bold">Education</h2>
+                        <h2 className="text-3xl font-bold">{`${language === "en" ? "Education" : language === "uz" ? "Ta'lim" : "Образование"}`}</h2>
 
 
 
@@ -24,11 +28,11 @@ export const Education = () => {
                                     <div className="flex items-start gap-x-4 w-[90%]">
                                         <img className={`${isDarkMode ? 'invert' : ""} h-5 md:h-7`} src={EduListDots} alt="list-dots" />
                                         <div>
-                                            <p>{data.UniverName}</p>
-                                            <p className="text-base text-gray-500 pt-1">{data.FacultyName}</p>
+                                            <p>{`${language === "en" ? data.UniverName_eng || data.UniverName : language === "uz" ? data.UniverName_uzb || data.UniverName : data.UniverName_rus || data.UniverName}`}</p>
+                                            <p className="text-base text-gray-500 pt-1">{`${language === "en" ? data.FacultyName_eng || data.FacultyName : language === "uz" ? data.FacultyName_uzb || data.FacultyName : language ==="ru"? data.FacultyName_rus || data.FacultyName : ""}`}</p>
                                         </div>
                                     </div>
-                                    <p className="ml-5 w-1/5 text-end">{data.date}</p>
+                                    <p className="ml-5 w-1/5 text-end">{`${language === "en" ? data.date_eng || data.date : language === "uz" ? data.date_uzb || data.date : data.date_rus || data.date}`}</p>
                                 </div>
                             ))}
                         </div>

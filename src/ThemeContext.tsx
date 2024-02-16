@@ -4,7 +4,7 @@ interface ThemeProviderProps {
   children: React.ReactNode;
 }
 interface Theme {
-  
+
   isDarkMode: boolean;
   toggleTheme: () => void;
 }

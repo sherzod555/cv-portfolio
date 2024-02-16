@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState } from 'react';
 
-interface LanguageProviderProps{
-    children: React.ReactNode;
+interface LanguageProviderProps {
+  children: React.ReactNode;
 }
 
 
