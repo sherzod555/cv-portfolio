@@ -38,10 +38,10 @@ export const Footer = () => {
 
                         <div className="grid gap-y-5">
                             <Link to='contacts' smooth={true} duration={1000}><p className="font-bold hover:text-white duration-500 cursor-pointer">CONTACTS</p></Link>
-                            <ul className="grid grid-cols-3 gap-x-6 gap-y-4 md:gap-x-10 md:gap-y-7">
+                            <ul className="grid gap-y-3 grid-cols-1 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-4">
 
                                 {mockDataContact.map((data, index) => (
-                                    <li key={index} className="cursor-pointer p-2 hover:scale-110 hover:bg-white duration-500 bg-white/50 rounded-[50%]"><a target="_blank" href={data.Link}><img className="h-5 md:h-7 w-auto" src={data.Icon} alt={data.Description} /></a></li>
+                                    <li key={index} className="cursor-pointer p-0 sm:p-2 hover:scale-110 hover:text-white sm:hover:bg-white duration-500 sm:bg-white/50 rounded-[50%]"><a target="_blank" href={data.Link}><img className="hidden sm:block sm:h-5 md:h-7 w-auto" src={data.Icon} alt={data.Description} /><p className="block sm:hidden">{data.Description}</p></a></li>
                                 ))}
                             </ul>
                         </div>

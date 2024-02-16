@@ -36,7 +36,7 @@ export const Header = () => {
 
 
                     {/* navigation bar */}
-                    <div className="flex items-start gap-x-2 justify-between py-5 text-sm xl:text-lg font-semibold">
+                    <div className="flex items-start lg:items-center gap-x-2 justify-between py-5 text-sm xl:text-lg font-semibold">
 
 
                         <div>
@@ -81,10 +81,12 @@ export const Header = () => {
 
                         {/* Page settings */}
                         <div className="flex items-center md:gap-x-6 sm:gap-x-4 gap-x-2 lg:gap-x-8">
-                            <div className="flex items-center gap-x-2 rounded-2xl border hover:scale-90 duration-300 px-3 py-2">
-                                <img className={`${isDarkMode ? "invert" : ""} h-5 lg:h-7 w-auto`} src={Download} alt="resume" />
+                            <div className=" rounded-2xl border hover:scale-90 duration-300 px-3 py-2">
+                                
 
-                                <a href="../../Resume.docx" download="Resume-Sherzod-Yodgorov.docx">Resume</a>
+                                <a className="flex items-center gap-x-2" href="../../Resume.docx" download="Resume-Sherzod-Yodgorov.docx">
+                                <img className={`${isDarkMode ? "invert" : ""} h-5 lg:h-7 w-auto`} src={Download} alt="resume" />
+                                <p className={`${isMobileMenuOpen ? 'hidden':''}`}>Resume</p></a>
                             </div>
 
                             <div onClick={toggleTheme} className="flex items-center rounded-2xl border p-2 cursor-pointer">
