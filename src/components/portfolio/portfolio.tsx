@@ -23,7 +23,7 @@ export const Portfolio = () => {
         
                 <div key={index} className="flex flex-col text-base md:text-xl">
                 
-                  <a href={data.PortLink} target="_blank" className="bg-white rounded-2xl hover:shadow-xl duration-500">
+                  <a href={data.PortLink} target="_blank" className={`${isDarkMode ? "bg-slate-900 text-white hover:shadow-lg" : "bg-white hover:shadow-xl"} hover:shadow-gray-400/50 rounded-2xl duration-500`}>
                 
                     <div>
                 
