@@ -21,7 +21,7 @@ export const mockDataPort = [
   {
     PortName: "YouTube Clone",
     PortImg: YouTube,
-    PortLink: "fake-youtube-by-sher555.netlify.app",
+    PortLink: "https://fake-youtube-by-sher555.netlify.app",
     PortDesc: "Next.JS, JS, TailwindCss, Responsive",
   },
 

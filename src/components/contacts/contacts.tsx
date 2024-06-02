@@ -1,7 +1,11 @@
 import { useTheme } from '../../ThemeContext.tsx';
+import { useLanguage } from "../../LanguageContext.tsx";
+
 
 export const Contacts = () => {
-    const { isDarkMode } = useTheme();    
+    const { isDarkMode } = useTheme();   
+    const { language } = useLanguage();
+ 
 
     return (
         <>
@@ -10,7 +14,7 @@ export const Contacts = () => {
                 <div className="container mx-auto xl:w-[1200px] px-7">
 
                     <div className="py-8">
-                        <h2 className="text-3xl font-bold">Contacts</h2>
+                        <h2 className="text-3xl font-bold">{`${language === "en" ? "Contacts" : language === "uz" ? "Bog'lanish usullari" : "Контакты"}`}</h2>
                     </div>
 
                 </div>

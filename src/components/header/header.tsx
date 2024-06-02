@@ -86,7 +86,7 @@ export const Header = () => {
                         {/* Page settings */}
                         <div className={`flex ${isLanguageMenuOpen ? "items-start" : "items-center"} md:gap-x-6 sm:gap-x-4 gap-x-2 lg:gap-x-8`}>
                             <div className=" rounded-2xl border hover:scale-90 duration-300 px-3 py-2">
-                                <a className="flex items-center gap-x-2" href="../../Resume.docx" download="Resume-Sherzod-Yodgorov.docx">
+                                <a className="flex items-center gap-x-2" href="../../CV.docx" download="Sherzod-Yodgorov-Resume.pdf">
                                     <img className={`${isDarkMode ? "invert" : ""} h-5 lg:h-7 w-auto`} src={Download} alt="resume" />
                                     <p className={`${isMobileMenuOpen ? 'hidden' : ''}`}>{`${language === "en" ? "Resume" : language === "uz" ? "Rezyume" : "Резюме"}`}</p></a>
                             </div>
